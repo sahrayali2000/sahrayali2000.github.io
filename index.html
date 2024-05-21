@@ -1,8 +1,177 @@
-<html>
+<!DOCTYPE html>
+<html lang="fa">
 <head>
-<title>hello world!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه علی عمادزاده</title>
+    <style>
+      body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    direction: rtl;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h1 span {
+    color: #32cd32;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+.info div {
+    margin: 5px 0;
+}
+
+    </style>
 </head>
 <body>
-<h1> hello world</h1>
+    <div id="particles-js"></div>
+    <div class="content">
+        <h1>من <span>علی صحرایی</span> هستم</h1>
+        <p>من عاشق برنامه‌نویسی هستم</p>
+        <div class="info">
+            <div>خراسان رضوی کاشمر خیابان امام کوچه امام 11/۳ مجتمع آریا پلاک ۴</div>
+            <div>تماس: 09158962186</div>
+            <div>sahrayali998@gmail.com</div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="scripts.js">
+      particlesJS('particles-js', {
+    "particles": {
+        "number": {
+            "value": 50,
+            "density": {
+                "enable": true,
+                "value_area": 800
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+                "width": 0,
+                "color": "#000000"
+            },
+            "polygon": {
+                "nb_sides": 5
+            }
+        },
+        "opacity": {
+            "value": 0.5,
+            "random": false,
+            "anim": {
+                "enable": false,
+                "speed": 1,
+                "opacity_min": 0.1,
+                "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+                "enable": false,
+                "speed": 40,
+                "size_min": 0.1,
+                "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 6,
+            "direction": "none",
+            "random": false,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": false,
+            "attract": {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 1200
+            }
+        }
+    },
+    "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "repulse"
+            },
+            "onclick": {
+                "enable": true,
+                "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+                "distance": 400,
+                "line_linked": {
+                    "opacity": 1
+                }
+            },
+            "bubble": {
+                "distance": 400,
+                "size": 40,
+                "duration": 2,
+                "opacity": 8,
+                "speed": 3
+            },
+            "repulse": {
+                "distance": 200,
+                "duration": 0.4
+            },
+            "push": {
+                "particles_nb": 4
+            },
+            "remove": {
+                "particles_nb": 2
+            }
+        }
+    },
+    "retina_detect": true
+});
+
+    </script>
 </body>
 </html>
